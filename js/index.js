@@ -1,9 +1,7 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('js/sample.js').then(function(registration) {
-    // 登録成功
-    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    console.log('スコープをServiceWorkerに登録成功: ', registration.scope);
   }).catch(function(err) {
-    // 登録失敗 :(
-    console.log('ServiceWorker registration failed: ', err);
+    console.log('ServiceWorkerに登録失敗: ', err);
   });
 }
